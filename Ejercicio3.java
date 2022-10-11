@@ -9,21 +9,23 @@
  *                                                                   ******               *
  ******************************************************************************************/
 import java.util.Scanner;
-import java.util.InputMismatchException;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        // Variable Scanner
+        // Variable: Scanner
         Scanner sc = new Scanner(System.in);
-        // Try - catch for errors
-        try {
+
         // Input
         System.out.print("Pesetas: ");
-        float pesetas = sc.nextFloat();   
+
+        // Variables: pesetas, euros
+        int pesetas = sc.nextInt();
+        double euros = pesetas / 166.386;
+
         // Output
-        System.out.println("Total euros: " + pesetas / 166.386);
-        } catch (InputMismatchException ex) {
-            System.out.println("Wrong input");
-        } sc.close();
+        System.out.printf("%d pesetas son %.3f euros. \n", pesetas, euros);
+
+        // Scanner closed
+        sc.close();
     }
 }
