@@ -22,9 +22,9 @@ public class Ejercicio9 {
         Scanner sc = new Scanner (System.in);
         // Variable "height", "radius"
         System.out.print("Please, enter the height (cm): ");
-        double height = sc.nextInt();
+        double height = sc.nextDouble();
         System.out.print("Please, enter the radius (cm): ");
-        double radius = sc.nextInt();
+        double radius = sc.nextDouble();
         // Variable "volume"
         double volume = ( 1.0 / 3.0 ) * Math.PI * Math.pow(radius, 2) * height; 
         // Output
